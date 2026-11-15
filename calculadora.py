@@ -24,3 +24,10 @@ def coseno(angulo):
 def tangente(angulo):           
     return math.tan(math.radians(angulo))  
 
+def exponencial(x):                
+    return math.exp(x)  
+
+def logaritmo(x):                  # Calcula el logaritmo natural.
+    if x <= 0:                    # Comprueba que x sea positivo.
+        raise ValueError("x debe ser positivo")
+    return math.log(x)   
